@@ -6,9 +6,14 @@ body {
     color: rgb(229, 231, 235);
     font-family: Verdana, Arial, sans-serif;
 }
-
-p {
+.mainblock{
     font-size: 14px;
+    text-align: left;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    max-width: 860px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 img {
@@ -16,8 +21,56 @@ img {
     height: auto;
 }
 
+.imgdiv{
+    text-align: center;
+}
+
+h1, h3{
+    text-align: center;
+}
+
+ol, ul{
+    padding-left: 20px;
+}
+
 .nav{
-    height: 20px;
-    text-align: left;
+    position: fixed;
+    display: flex;
+    justify-content: right;
+    top: 0;
+    width: 100%;
+    background-color: rgb(17, 34, 39);
+}
+
+.navlink{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(229, 231, 235);
+    padding: 10px 10px;
+    text-decoration: none;
+}
+
+.navlink:hover{
+    background-color: black;
+}
+
+h1, h3{
+    text-decoration: underline;
+}
+
+@media screen and (max-width:640px) {
+    img{
+        max-width: 200px;
+        height: auto;
+    }
+    .mainblock{
+        width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .nav{
+        justify-content: center;
+    }
 }
 

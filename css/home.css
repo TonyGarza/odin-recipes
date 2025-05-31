@@ -19,6 +19,8 @@ body {
 
 .title-block{
     text-align: center;
+    margin-right: 0;
+    padding: 0;
 }
 
 img {
@@ -33,13 +35,13 @@ img {
 
 @media screen and (max-width:640px) {
     .main-block, .title-block{
-        width: 380px;
-        margin:auto;
+        width: 320px;
         text-align: center;
     }
 
     .main-block{
         display: inline;
+        margin:auto;
     }
 
     .fb-image{
